@@ -135,14 +135,87 @@
         <footer>
             <hr/>
             <br>
-            <p> <b> Please enter your email address and I will email you back! </b> </p>
             <form action="" method="get">
+                <legend> <b> Please enter your email address and I will email you back! </b>  </legend>
                 <label for="emailForm"> Enter your email address: </label>
                 <input type="email" id="emailForm" required>
                 <input type="button" value="Submit Email">
             </form>
             <br>
-            <p> Site last updated on: <time datetime="19:31"> 7:31 PM </time> </p>
+            <form action="" method="get">
+                <label for="animal-survey"> Enter your favorite animal! </label>
+                <select id="animal-survey" >
+                    <optgroup label="Mammal">
+                    <option> Cow </option>
+                    <option> Dog </option>
+                    <option> Platypus </option>
+                    </optgroup>
+                    <optgroup label="Bird">
+                        <option> Parrot </option>
+                        <option> Hawk </option>
+                        <option> Raven </option>
+                    </optgroup>
+                    <optgroup label="Fish">
+                        <option> Parrotfish </option>
+                        <option> Guppy </option>
+                        <option> Blue Marlin </option>
+                    </optgroup>
+                </select>
+                <button>
+                    I choose you!
+                </button>
+            </form>
+            <br>
+            <form action="" method="get">
+                <fieldset>                   
+                <legend> Choose your favorite plant!</legend>
+
+                <label for="oak-tree-choice"> Oak Tree </label>
+                <input type="radio" id="oak-tree-choice">
+
+                <label for="sunflower-choice"> Sunflower </label>
+                <input type="radio" id="sunflower-choice">
+
+                <label for="poppy-choice"> Poppy </label>
+                <input type="radio" id="poppy-choice">
+                </fieldset>
+                <button>
+                    I'll leaf you later!
+                </button>
+            </form>
+
+            <br>
+            <form action="" method="get">
+                <legend> Choose your favorite brand of Ramen </legend>
+                <label for="ramen-choice">Choose a flavor:</label>
+                <input list="ramen-brands" id="ramen-choice" required>
+
+                <datalist id="ramen-brands">
+                    <option value="Shin">
+                    <option value="Marachan">
+                    <option value="Top Ramen">
+                    <option value="Samyang">
+                    <option value="Nissin">
+                    <option value="Neoguri">
+                </datalist>
+                <button>
+                    Chowtime!
+                </button>
+            </form>
+
+
+            <template>
+                <textarea>
+                    Personal message from Brendan will be here with full JS implementation
+                </textarea>
+            </template>
+
+            <br>
+            <!-- Use of template below, for future implementation with JS, want live reload of last updated time based on pushes to the repo -->
+            <template>
+                <p> Site last updated on: <time datetime="19:31"> 7:31 PM </time> </p>
+            </template>
+            
         </footer>
 
     </body>
