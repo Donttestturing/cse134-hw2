@@ -3,51 +3,139 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Brendan's Website</title>
+        <title> Brendan's Website </title>
+        <link rel="icon" href="/content/images/Photo_of_me.png"/> <!-- Adding favicon which is pic of me currently-->
     </head>
     <body>
         <header>
+            <h1> Homepage </h1>
             <nav>
-                <ol>
+                <ul>
                     <li> <a href="/personal_demos/index.html"> Personal Demos </a></li>
                     <li> <a href="/experiments/index.html"> Experiments </a></li>
-                </ol>
+                </ul>
             </nav>
             <nav>
-                <ol>
+                <ul>
                     <li> <a href="https://www.linkedin.com/in/brendan-devlin-7846a7252/"> My LinkedIn </a></li>
                     <li> <a href="https://github.com/Donttestturing"> My Github </a></li>
                     <li> <a href="https://ucsd.edu/"> UCSD's Website </a></li>
-                </ol>
+                </ul>
             </nav>
+            <hr/>
         </header>
 
         <main>
             <div> 
                 <details>
-                    <summary> What does the poet take for their depression? </summary>
-                    <i> Prose-ac </i>
+                    <summary> What does the poet take for their depression? </summary> <!-- Open with a joke -->
+                    <em> Prose-ac </em>
                 </details>
             </div>
-            <span>
-                <a href="/content/images/Photo_of_me.png"> Brendan Devlin </a>
-            </span>
+            <figure> 
+                <img src="/content/images/Photo_of_me.png" alt="Photo of Brendan Devlin from mid chest height and above">
+                <figcaption> Brendan Devlin </figcaption>
+            </figure>
+                
+            <section> <!-- About me section with sub sections -->
+                <h2> About me: </h2>
+                <section>
+                    <h3> <i> Philosophy </i> </h3>
+                    <table> <!-- Formatting for table will be much improved once we are able to add CSS -->
+                        <caption> <b> My career skills and goals: <b> </caption>
+                        <colgroup>
+                            <col span="5"> 
+                        </colgroup>
+                        <tr> 
+                            <th> Me </th>
+                            <th> Technical Skills </th>
+                            <th> Interpersonal Skills </th>
+                            <th> Goals </th>
+                            <th> Number of languages learned </th>
+                        </tr>
+                        <tr>
+                            <td> <img src="/content/images/Photo_of_me_small.png" alt="Smaller Photo of Brendan Devlin from mid chest height and above"> </td>
+                            <td> <strong> Java, C++, Python, Unix, JavaScript/HTML/CSS </strong> </td>
+                            <td> <strong> Thoughtful and kind communicator whose diligent digging never leaves his teammates in a hole. </strong> </td>
+                            <td> I hope to become a very competent and real full stack developer. </td>
+                            <td> 7 </td>
+                        </tr>
+
+
+                    </table>
+
+                    <br>
+                    <p> These are my personal beliefs and reflect no companies I work for. </p>
+      
+                    <p> I believe that we all are <em>valuable</em>, that everything we do is <em>meaningful</em>, and that we are all part of the <em>immense cosmic casual web.</em> </p>
+                </section>
+
+                <section>
+                    <h3> Likes and Cool Stuff </h3>
+                    <p> I like and enjoy much of popular television and movies today. I am also a <em> voracious reader. </em> </p>
+                    
+                    <ol> My favorite novels are: 
+                        <li> <i> Stranger in a Strange Land </i> </li>
+                        <li> <i> Ender's Game </i> </li>
+                        <li> <i> Dune </i> </li>
+                    </ol>
+                    <aside> Did you know that Dune is being made into a big budget Movie? </aside>
+
+                    <p> Here are some short clips from my favorite show. All Rights to NBC Universal </p>
+                    <video width="400" height="320" controls> 
+                        <source src="/content/video/frasierIfitsAnyComfort.mp4" /> 
+                        Your Browser doesn't support the video tag
+                    </video>
+                    <video width="400" height="320" controls> 
+                        <source src="/content/video/cheersRueTheDay.mp4" /> 
+                        Your Browser doesn't support the video tag
+                    </video>
+
+                    <p> Here are some short audio clips from things I like. All Rights to Republic Records and Universal Music Group, NBC Universal, and The Walt Disney Company </p>
+                    <p> "For once in my Life" by Stevie Wonder,  Chris Pratt as Andy Dwyer in <i>Parks and Recreation</i>, and Charlie Day as Charlie Kelly in <i>It's Always Sunny in Philadelphia</i> </p> <br>
+                    <audio width="400" height="320" controls> 
+                        <source src="/content/audio/ForOnceInMyLifeHook.mp3" /> 
+                        Your Browser doesn't support the audio tag
+                    </audio>
+                    <audio width="400" height="320" controls> 
+                        <source src="/content/audio/harmonies.mp3" /> 
+                        Your Browser doesn't support the audio tag
+                    </audio>
+                    <audio width="400" height="320" controls> 
+                        <source src="/content/audio/helpMePlease.mp3" /> 
+                        Your Browser doesn't support the audio tag
+                    </audio>
+                    <p> I think of the last audio clip often, whenever I am struggling! </p>
+                </section>
+
+                <section>
+                    <span>
+                        <h3> My Resume: </h3>
+                        <picture id="my_resume">
+                            <img src="/content/images/Brendan Devlin's Resume.png" alt="An image of Brendan Devlin's Resume, listing education, skills, and other pertinent details">
+                        </picture>
+                    </span>
+                </section>
+
+            </section>
+
 
 
 
         </main>
 
 
-
-
-
-
-
-
         <footer>
-
-
+            <hr/>
+            <br>
+            <p> <b> Please enter your email address and I will email you back! </b> </p>
+            <form action="" method="get">
+                <label for="emailForm"> Enter your email address: </label>
+                <input type="email" id="emailForm" required>
+                <input type="button" value="Submit Email">
+            </form>
+            <br>
+            <p> Site last updated on: <time datetime="19:31"> 7:31 PM </time> </p>
         </footer>
 
     </body>
