@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title> Brendan's Website </title>
-        <link rel="icon" href="/content/images/Photo_of_me.png"/> <!-- Adding favicon which is pic of me currently-->
+        <link rel="icon" href="/content/images/Photo_of_me.png"> <!-- Adding favicon which is pic of me currently-->
         <!-- demoing small amount of style, just borders for sections -->
         <style> 
             section {
@@ -29,7 +29,7 @@
                     <li> <a href="https://ucsd.edu/"> UCSD's Website </a></li>
                 </ul>
             </nav>
-            <hr/>
+            <hr>
         </header>
 
         <main>
@@ -49,7 +49,7 @@
                 <section>
                     <h3> <i> Philosophy </i> </h3>
                     <table> <!-- Formatting for table will be much improved once we are able to add CSS -->
-                        <caption> <b> My career skills and goals: <b> </caption>
+                        <caption> <b> My career skills and goals: </b> </caption>
                         <colgroup>
                             <col span="5"> 
                         </colgroup>
@@ -80,36 +80,38 @@
                 <section>
                     <h3> Likes and Cool Stuff </h3>
                     <p> I like and enjoy much of popular television and movies today. I am also a <em> voracious reader. </em> </p>
+                    <div>
+                        <p>My favorite novels are:</p>
+                        <ol> 
+                            <li> <i> Stranger in a Strange Land </i> </li>
+                            <li> <i> Ender's Game </i> </li>
+                            <li> <i> Dune </i> </li>
+                        </ol>
+                        <aside> Did you know that Dune is being made into a big budget Movie? </aside>
+                    </div>
                     
-                    <ol> My favorite novels are: 
-                        <li> <i> Stranger in a Strange Land </i> </li>
-                        <li> <i> Ender's Game </i> </li>
-                        <li> <i> Dune </i> </li>
-                    </ol>
-                    <aside> Did you know that Dune is being made into a big budget Movie? </aside>
-
                     <p> Here are some short clips from my favorite show. All Rights to NBC Universal </p>
                     <video width="400" height="320" controls> 
-                        <source src="/content/video/frasierIfitsAnyComfort.mp4" /> 
+                        <source src="/content/video/frasierIfitsAnyComfort.mp4" > 
                         Your Browser doesn't support the video tag
                     </video>
                     <video width="400" height="320" controls> 
-                        <source src="/content/video/cheersRueTheDay.mp4" /> 
+                        <source src="/content/video/cheersRueTheDay.mp4" > 
                         Your Browser doesn't support the video tag
                     </video>
 
                     <p> Here are some short audio clips from things I like. All Rights to Republic Records and Universal Music Group, NBC Universal, and The Walt Disney Company </p>
                     <p> "For once in my Life" by Stevie Wonder,  Chris Pratt as Andy Dwyer in <i>Parks and Recreation</i>, and Charlie Day as Charlie Kelly in <i>It's Always Sunny in Philadelphia</i> </p> <br>
-                    <audio width="400" height="320" controls> 
-                        <source src="/content/audio/ForOnceInMyLifeHook.mp3" /> 
+                    <audio controls> 
+                        <source src="/content/audio/ForOnceInMyLifeHook.mp3" > 
                         Your Browser doesn't support the audio tag
                     </audio>
-                    <audio width="400" height="320" controls> 
-                        <source src="/content/audio/harmonies.mp3" /> 
+                    <audio controls> 
+                        <source src="/content/audio/harmonies.mp3" > 
                         Your Browser doesn't support the audio tag
                     </audio>
-                    <audio width="400" height="320" controls> 
-                        <source src="/content/audio/helpMePlease.mp3" /> 
+                    <audio controls> 
+                        <source src="/content/audio/helpMePlease.mp3" > 
                         Your Browser doesn't support the audio tag
                     </audio>
                     <p> I think of the last audio clip often, whenever I am struggling! </p>
@@ -117,9 +119,9 @@
 
                 <section>
                     <span>
-                        <h3> My Resume: </h3>
+                        <p> <b> My Resume: </b> <p>
                         <picture id="my_resume">
-                            <img src="/content/images/Brendan Devlin's Resume.png" alt="An image of Brendan Devlin's Resume, listing education, skills, and other pertinent details">
+                            <img src="/content/images/Brendan_Devlins_Resume.png" alt="An image of Brendan Devlin's Resume, listing education, skills, and other pertinent details">
                         </picture>
                     </span>
                 </section>
@@ -127,22 +129,20 @@
             </section>
 
 
-
-
         </main>
 
 
         <footer>
-            <hr/>
+            <hr>
             <br>
-            <form action="" method="get">
-                <legend> <b> Please enter your email address and I will email you back! </b>  </legend>
+            <form action="/no_action_yet.php" method="get"> <!-- Using fake action page for unimplemented functionality-->
+                <p> <b> Please enter your email address and I will email you back! </b>  </p> 
                 <label for="emailForm"> Enter your email address: </label>
                 <input type="email" id="emailForm" required>
                 <input type="button" value="Submit Email">
             </form>
             <br>
-            <form action="" method="get">
+            <form action="/no_action_yet.php" method="get">
                 <label for="animal-survey"> Enter your favorite animal! </label>
                 <select id="animal-survey" >
                     <optgroup label="Mammal">
@@ -166,7 +166,7 @@
                 </button>
             </form>
             <br>
-            <form action="" method="get">
+            <form action="/no_action_yet.php" method="get">
                 <fieldset>                   
                 <legend> Choose your favorite plant!</legend>
 
@@ -185,8 +185,8 @@
             </form>
 
             <br>
-            <form action="" method="get">
-                <legend> Choose your favorite brand of Ramen </legend>
+            <form action="/no_action_yet.php" method="get">
+                <p> Choose your favorite brand of Ramen </p>
                 <label for="ramen-choice">Choose a flavor:</label>
                 <input list="ramen-brands" id="ramen-choice" required>
 
