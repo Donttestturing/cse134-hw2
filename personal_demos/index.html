@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title> Personal Demos </title>
-        <link rel="icon" href="/content/images/Photo_of_me.png"/> <!-- Adding favicon which is pic of me currently-->
+        <link rel="icon" href="/content/images/Photo_of_me.png" > <!-- Adding favicon which is pic of me currently-->
     </head>
     <body>
         <header>
@@ -13,16 +13,16 @@
                 <ul>
                     <li> <a href="/experiments/index.html"> Experiments </a></li>
                     <li> <a href="/index.html"> Homepage </a></li>
-                <ul>
+                </ul>
             </nav>
             <nav>
                 <ul>
                     <li> <a href="https://www.linkedin.com/in/brendan-devlin-7846a7252/"> My LinkedIn </a></li>
                     <li> <a href="https://github.com/Donttestturing"> My Github </a></li>
                     <li> <a href="https://ucsd.edu/"> UCSD's Website </a></li>
-                <ul>
+                </ul>
             </nav>
-            <hr/>
+            <hr>
         </header>
         <main>
             <section>
@@ -32,12 +32,12 @@
                     //given a BWTransform, invert to give orig string
                     string invertBWT(const string & s){
                         string strToReturn = "";
-                        vector<int> vecL2F = last2FirstHelper(s);
-                        vector<BWTChar> vecToSort, vec;
+                        vector&lt;int&gt; vecL2F = last2FirstHelper(s);
+                        vector&lt;BWTChar&gt; vecToSort, vec;
                         int l2f;
                         string str = s.substr(0);
                         
-                        for(int i = 0; i < s.size(); i++){	//add all letters in BWT given to each vector, one will get sorted and be the vec for the first column
+                        for(int i = 0; i &lt; s.size(); i++){	//add all letters in BWT given to each vector, one will get sorted and be the vec for the first column
                             BWTChar bwtCh(str[i]);
                             vecToSort.push_back(bwtCh);
                             vec.push_back(bwtCh);
@@ -45,7 +45,7 @@
                         sort(vecToSort.begin(), vecToSort.end(), BWTCharCompare);
                     
                     //beginning inversion
-                        for(int i = 0; i < vecL2F.size()-1; i++){		
+                        for(int i = 0; i &lt; vecL2F.size()-1; i++){		
                             if(i == 0){
                                 l2f = vecL2F[i];
                                 strToReturn.insert(strToReturn.begin(), vecToSort[i].getChar());
@@ -64,7 +64,7 @@
 
             <!-- More to add here, if wanted -->
             <section>
-                <h3> </h3>
+                <h3> More to Add </h3>
 
 
             </section>
