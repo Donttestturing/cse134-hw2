@@ -3,6 +3,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="Brendan's Homepage" description="The homepage for Brendan's personal website, with a focus on his career in CS and his resume">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
         <title> Brendan's Website </title>
         <link rel="icon" href="/content/images/Photo_of_me.png"> <!-- Adding favicon which is pic of me currently-->
         <!-- demoing small amount of style, just borders for sections -->
@@ -122,7 +124,7 @@
                     <h3> My Resume: </h3>
                     <span>
                         <picture id="my_resume">
-                            <img src="/content/images/Brendan_Devlins_Resume.png" alt="An image of Brendan Devlin's Resume, listing education, skills, and other pertinent details">
+                            <img src="/content/images/Brendan_Devlins_Resume.png" alt="An image of Brendan Devlin's Resume, listing education, skills, and other pertinent details" loading="lazy">
                         </picture>
                     </span>
                 </section>
@@ -136,14 +138,14 @@
         <footer>
             <hr>
             <br>
-            <form action="/no_action_yet.php" method="get"> <!-- Using fake action page for unimplemented functionality-->
+            <form action="https://httpbin.org/post" method="post"> <!-- Using fake action page for unimplemented functionality-->
                 <p> <b> Please enter your email address and I will email you back! </b>  </p> 
                 <label for="emailForm"> Enter your email address: </label>
                 <input type="email" id="emailForm" required>
-                <input type="button" value="Submit Email">
+                <button type="submit"> Submit Email </button>
             </form>
             <br>
-            <form action="/no_action_yet.php" method="get">
+            <form action="https://httpbin.org/post" method="post">
                 <label for="animal-survey"> Enter your favorite animal! </label>
                 <select id="animal-survey" >
                     <optgroup label="Mammal">
@@ -162,12 +164,12 @@
                         <option> Blue Marlin </option>
                     </optgroup>
                 </select>
-                <button>
+                <button type="submit">
                     I choose you!
                 </button>
             </form>
             <br>
-            <form action="/no_action_yet.php" method="get">
+            <form action="https://httpbin.org/post" method="post">
                 <fieldset>                   
                 <legend> Choose your favorite plant!</legend>
 
@@ -180,13 +182,13 @@
                 <label for="poppy-choice"> Poppy </label>
                 <input type="radio" id="poppy-choice">
                 </fieldset>
-                <button>
+                <button type="submit">
                     I'll leaf you later!
                 </button>
             </form>
 
             <br>
-            <form action="/no_action_yet.php" method="get">
+            <form action="https://httpbin.org/post" method="post">
                 <p> Choose your favorite brand of Ramen! </p>
                 <label for="ramen-choice">Choose a flavor:</label>
                 <input list="ramen-brands" id="ramen-choice" required>
@@ -199,7 +201,7 @@
                     <option value="Nissin">
                     <option value="Neoguri">
                 </datalist>
-                <button>
+                <button type="submit">
                     Chowtime!
                 </button>
             </form>
